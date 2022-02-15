@@ -45,4 +45,4 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Author
 
 -   Frontend Mentor - [@Valeri85](https://www.frontendmentor.io/profile/Valeri85)
--   Twitter - [@Valeri79125128](https://www.twitter.com/Valeri79125128)
+-   Twitter - [@Valeri](https://www.twitter.com/Valeri79125128)
