@@ -39,8 +39,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 -   [ttf2woff](https://www.npmjs.com/package/ttf2woff) - npm package helped me convert fonts from ttf format to woff.
 -   [ttf2woff2](https://www.npmjs.com/package/ttf2woff2) - npm package helped me convert fonts from ttf format to woff2.
 -   convert ttf2woff2 from powershell:
-    `start-process -nnw -wait ttf2woff2.cmd -rsi fonts/Outfit-Bold.ttf -rso fonts/Outfit-Bold.woff2`
-    `start-process -nnw -wait ttf2woff2.cmd -rsi fonts/Outfit-Regular.ttf -rso fonts/Outfit-Regular.woff2`
+-   `start-process -nnw -wait ttf2woff2.cmd -rsi fonts/Outfit-Bold.ttf -rso fonts/Outfit-Bold.woff2`
+-   `start-process -nnw -wait ttf2woff2.cmd -rsi fonts/Outfit-Regular.ttf -rso fonts/Outfit-Regular.woff2`
 
 ## Author
 
