@@ -1,0 +1,7 @@
+@use '../base/root' as *;
+
+body {
+	display: grid;
+	background-color: var(--light-gray);
+	text-align: center;
+}

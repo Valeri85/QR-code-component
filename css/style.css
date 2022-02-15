@@ -1,0 +1,109 @@
+/* autoprefixer grid: autoplace */
+/* Box sizing rules */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+/* Set core root defaults */
+html {
+  font-family: Outfit, sans-serif;
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.4;
+  text-rendering: optimizeSpeed;
+}
+
+/* Remove default margin */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove default styles */
+a,
+abbr {
+  text-decoration: none;
+}
+
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+@font-face {
+  font-family: Outfit;
+  font-display: swap;
+  src: url("../fonts/Outfit-Bold.woff2") format("woff2"), url("../fonts/Outfit-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Outfit;
+  font-display: swap;
+  src: url("../fonts/Outfit-Regular.woff2") format("woff2"), url("../fonts/Outfit-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  display: -ms-grid;
+  display: grid;
+  background-color: var(--light-gray);
+  text-align: center;
+}
+
+.main {
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
+  place-self: center;
+  width: 21.25em;
+  margin-inline: 2em;
+  padding: 1.1em 1.1em 2.5em;
+  background-color: var(--white);
+  border-radius: 1.25em;
+}
+@media screen and (min-width: 90em) {
+  .main {
+    width: 20em;
+  }
+}
+.main__img {
+  border-radius: 0.625em;
+}
+.main__title {
+  margin: 1em 0 0.5em;
+  padding-inline: 0.5em;
+  font-size: 1.425rem;
+  line-height: 1.4;
+  color: var(--dark-blue);
+}
+.main__text {
+  color: var(--grayish-blue);
+  padding-inline: 0.8em;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1em;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvYmFzZS9fcmVzZXQuc2NzcyIsInN0eWxlLmNzcyIsIi4uL3Njc3MvYmFzZS9fcm9vdC5zY3NzIiwiLi4vc2Nzcy9iYXNlL19mb250LWZhY2Uuc2NzcyIsIi4uL3Njc3MvbGF5b3V0L19ib2R5LnNjc3MiLCIuLi9zY3NzL2xheW91dC9tYWluLnNjc3MiLCIuLi9zY3NzL2hlbHBlcnMvX21peGlucy5zY3NzIiwiLi4vc2Nzcy9sYXlvdXQvX2Zvb3Rlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGlDQUFBO0FBRUEscUJBQUE7QUFDQTs7O0VBR0MsMkJBQUE7T0FBQSxzQkFBQTtBQ0FEOztBREdBLDJCQUFBO0FBQ0E7RUFDQywrQkFBQTtFQUNBLGVBQUE7RUFDQSx1QkFBQTtBQ0FEOztBREdBLDJCQUFBO0FBQ0E7RUFDQyxXQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLDZCQUFBO0FDQUQ7O0FER0EsMEJBQUE7QUFDQTs7O0VBR0MsU0FBQTtFQUNBLFVBQUE7QUNBRDs7QURHQSxvQ0FBQTtBQUNBO0VBQ0MsY0FBQTtFQUNBLGVBQUE7QUNBRDs7QURHQSwwQkFBQTtBQUNBOztFQUVDLHFCQUFBO0FDQUQ7O0FDekNBO0VBQ0MsV0FBQTtFQUNBLHlCQUFBO0VBQ0EsZ0NBQUE7RUFDQSxrQ0FBQTtFQUNBLCtCQUFBO0FENENEOztBRTlDQTtFQUNDLG1CQUFBO0VBQ0Esa0JBQUE7RUFDQSx1R0FBQTtFQUVBLGdCQUFBO0VBQ0Esa0JBQUE7QUZnREQ7QUU5Q0E7RUFDQyxtQkFBQTtFQUNBLGtCQUFBO0VBQ0EsNkdBQUE7RUFFQSxnQkFBQTtFQUNBLGtCQUFBO0FGK0NEO0FHOURBO0VBQ0MsaUJBQUE7RUFBQSxhQUFBO0VBQ0EsbUNBQUE7RUFDQSxrQkFBQTtBSGdFRDs7QUlqRUE7RUFDQywwQkFBQTtFQUFBLDZCQUFBO0VBQUEsa0JBQUE7RUFDQSxjQUFBO0VBSUEsa0JBQUE7RUFDQSwwQkFBQTtFQUNBLDhCQUFBO0VBQ0EscUJBQUE7QUppRUQ7QUsxRUM7RURBRDtJQUlFLFdBQUE7RUowRUE7QUFDRjtBSXJFQztFQUNDLHNCQUFBO0FKdUVGO0FJckVDO0VBQ0MsbUJBQUE7RUFDQSxxQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7RUFDQSx1QkFBQTtBSnVFRjtBSXJFQztFQUNDLDBCQUFBO0VBQ0EscUJBQUE7QUp1RUY7O0FNakdBO0VBQ0MsZ0JBQUE7RUFDQSxZQUFBO0FOb0dEIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

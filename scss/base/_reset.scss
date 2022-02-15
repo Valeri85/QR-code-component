@@ -1,0 +1,43 @@
+/* autoprefixer grid: autoplace */
+
+/* Box sizing rules */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+/* Set core root defaults */
+html {
+	font-family: Outfit, sans-serif;
+	font-size: 15px;
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	width: 100%;
+	min-height: 100vh;
+	line-height: 1.4;
+	text-rendering: optimizeSpeed;
+}
+
+/* Remove default margin */
+body,
+h1,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Make images easier to work with */
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/* Remove default styles */
+a,
+abbr {
+	text-decoration: none;
+}

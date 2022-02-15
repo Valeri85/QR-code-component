@@ -1,0 +1,29 @@
+@use '../base/root' as *;
+@use '../helpers/mixins';
+@use '../helpers/functions';
+
+.main {
+	place-self: center;
+	width: functions.em(340);
+	@include mixins.desktop {
+		width: functions.em(320);
+	}
+	margin-inline: 2em;
+	padding: 1.1em 1.1em 2.5em;
+	background-color: var(--white);
+	border-radius: functions.em(20);
+	&__img {
+		border-radius: functions.em(10);
+	}
+	&__title {
+		margin: 1em 0 0.5em;
+		padding-inline: 0.5em;
+		font-size: 1.425rem;
+		line-height: 1.4;
+		color: var(--dark-blue);
+	}
+	&__text {
+		color: var(--grayish-blue);
+		padding-inline: 0.8em;
+	}
+}
