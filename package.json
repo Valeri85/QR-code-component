@@ -8,7 +8,8 @@
 		"sass:watch": "npx sass -w scss/style.scss:css/style.css",
 		"postcss:autoprefixer": "npx postcss css/style.css -u autoprefixer -r",
 		"sass:compressed": "npx sass css/style.css:css/style.min.css --style compressed",
-		"ttf2woff": "npx ttf2woff fonts/Outfit-Bold.ttf fonts/Outfit-Bold.woff && npx ttf2woff fonts/Outfit-Regular.ttf fonts/Outfit-Regular.woff"
+		"ttf2woff": "npx ttf2woff fonts/Outfit-Bold.ttf fonts/Outfit-Bold.woff && npx ttf2woff fonts/Outfit-Regular.ttf fonts/Outfit-Regular.woff",
+		"build": "npm run postcss:autoprefixer && npm run sass:compressed"
 	},
 	"keywords": [],
 	"author": "",
