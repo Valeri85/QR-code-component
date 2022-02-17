@@ -5,6 +5,7 @@
 .main {
 	place-self: center;
 	width: functions.em(340);
+	box-shadow: 0 5px 20px -10px var(--grayish-blue);
 	@include mixins.desktop {
 		width: functions.em(320);
 	}
