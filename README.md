@@ -35,6 +35,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Useful resources
 
+-   [sass](https://www.npmjs.com/package/sass) - npm package is a distribution of Dart Sass. Sass makes CSS fun again.
 -   [autoprefixer](https://www.npmjs.com/package/autoprefixer) - PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use.
 -   [ttf2woff](https://www.npmjs.com/package/ttf2woff) - npm package helped me convert fonts from ttf format to woff.
 -   [ttf2woff2](https://www.npmjs.com/package/ttf2woff2) - npm package helped me convert fonts from ttf format to woff2.
